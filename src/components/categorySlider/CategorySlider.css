@@ -1,0 +1,98 @@
+
+/* ------- Categories -----  */
+.categories-slider .single {
+    position: relative;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: all 300ms ease-in;
+}
+.categories-slider .single img{
+    transition: all 300ms ease-in;
+}
+.categories-slider .single:hover img{
+    scale: 1.2;
+}
+.categories-slider .single p{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    background: var(--color-main);
+    padding: 0.5rem 0rem;
+    transition: all 300ms ease-in;
+    text-transform: capitalize;
+}
+.categories-slider .single:hover p{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* background: #e1131a79; */
+    padding: 0.5rem 0rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: red;
+}
+@media screen and (max-width:600px){
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: var(--swiper-pagination-bottom, 8px);
+        top: var(--swiper-pagination-top, auto);
+        left: 0;
+        width: 100%;
+        bottom: -2%;
+    }
+    .swiper-wrapper {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:432px) {
+    .categories-slider .single p, .categories-slider .single:hover p {
+
+        font-size: 12px;
+       
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    z-index: 10; 
+    cursor: pointer; 
+    color: white;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev {
+    left: -0%; 
+}
+
+.swiper-button-next {
+    right: -0%; 
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 30px; 
+        height: 30px; 
+    }
+    .swiper-button-prev {
+        left: 0px; 
+    }   
+    .swiper-button-next {
+        right: 0px; 
+    }
+}
