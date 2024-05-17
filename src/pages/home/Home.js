@@ -35,8 +35,8 @@ const Home = () => {
           <img src={bn1} alt="" />
         </div>
       </section>
-      <Subhead title="Our Products" para="See Our All Products" />
-      <OurProducts/>
+      {/* <Subhead title="Our Products" para="See Our All Products" />
+      <OurProducts/> */}
       {/* <PaymentFoot/> */}
       <Sidecart/>
     </div>

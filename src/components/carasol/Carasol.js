@@ -48,7 +48,7 @@ const Carasol = () => {
                 ))
                 
             }
-               <div className="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                <div className="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
                 <div className="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
             
         </Swiper>

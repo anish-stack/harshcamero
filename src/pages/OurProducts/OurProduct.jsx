@@ -43,7 +43,7 @@ const OurProducts = () => {
                                     <div className="product-name">{item.productName}</div>
                                     <div className="sizes" key={index}>
                                         {item.sizes.map((size, index) => (
-                                            <small>{size.size}</small>
+                                            <small key={index}>{size.size}</small>
 
                                         ))}
                                     </div>
