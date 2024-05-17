@@ -34,7 +34,10 @@ const Carasol = () => {
             pagination={{
               clickable: true,
             }}
-            navigation={true}
+            navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+            }}
             modules={[Pagination, Navigation]}
             className="mySwiper"
         >
@@ -43,7 +46,10 @@ const Carasol = () => {
                     <SwiperSlide key={index}><img src={item.image} alt="carasoul-image" /></SwiperSlide>
 
                 ))
+                
             }
+               <div className="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                <div className="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
             
         </Swiper>
     </>
